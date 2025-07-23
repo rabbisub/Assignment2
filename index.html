@@ -7,18 +7,23 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header class="mt-9 pl-50 pr-50 ">
-        <nav class="flex items-center justify-between">
+    <header class="mt-22 pl-5 pr-5 md:mt-10 md:pl-50 md:pr-50">
+        <nav class="flex items-center justify-between ">
             <div>
-                <img class="w-45" src="assets/logo.png" alt="">
+                <img class="w-21 md:w-45 lg:w-45" src="assets/logo.png" alt="">
             </div>
             <div>
-                <ul class="flex gap-16">
+                <ul class="hidden items-end md:flex lg:flex md:gap-16 lg:gap-16 ">
                     <li><a class="font-bold text-[#252432]" href="">Home</a></li>
                     <li><a class="text-[#8987A1]" href=""><span>Shop</span></a></li>
                     <li><a class="text-[#8987A1]" href=""><span>About us</span></a></li>
-                    <li><a class="flex text-[#000000]" href=""><img src="assets/trolley.png" alt=""> Cart ($56)</a></li>
+                    <li><a class="flex text-[#000000] items-center gap-1 font-medium" href="">
+                        <img  src="assets/trolley.png" alt="">Cart ($56)</a></li>
                 </ul>
+            </div>
+            <div class="md:hidden lg:hidden">
+                <a class="flex text-[#000000] items-center gap-1 font-medium" href="">
+                <img  src="assets/trolley.png" alt="">Cart ($56)</a>
             </div>
         </nav>
     </header>
